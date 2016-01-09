@@ -36,6 +36,14 @@ Another mode of sharing is read-only mode where the server that was added with t
 
 The clients should be able to add a torrent to ALL servers as if it was adding it to one.
 
+#### Renaming files
+Many bittorrent users find themselves often in the situtation of having to hard-link files and then rename those.
+Allow the users to do this with support in the server exposed in the clients.
+This includes:
++ hardlinking everything in a torrent or set of torrents to some path.
++ batch renaming files according to rules - [filebot](http://www.filebot.net/) is a good example of doing this. This might impact the footprint a bit, so consider making this a plugin. The ability to batch rename shouldn't be a plugin, but the specific way it is done can very well be.
++ hardlinking and then batch renaming according to rules - this is the combination of the two above.
+
 ### Web client
 The web client will be based on simple HTML5 + client side javascript.
 
